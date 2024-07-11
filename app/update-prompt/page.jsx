@@ -2,6 +2,7 @@
 
 import {useState,useEffect} from 'react'
 import { useRouter,useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import Form from '@/components/Form';
 
 
@@ -76,6 +77,9 @@ const UpdatePrompt = () => {
 
 
   return (
+
+    <Suspense fallback={<div>Loading...</div>}>
+
     <div>
       <Form
 
@@ -89,6 +93,8 @@ const UpdatePrompt = () => {
 
 
     </div>
+
+    </Suspense>
   )
 }
 
