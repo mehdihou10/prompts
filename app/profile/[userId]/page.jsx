@@ -4,6 +4,7 @@ import Profile from "@/components/Profile"
 import {useState,useEffect} from 'react';
 
 
+
 const UserProfile = ({params}) => {
 
     const [posts,setPosts] = useState([]);
